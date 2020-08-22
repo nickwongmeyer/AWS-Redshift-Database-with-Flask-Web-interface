@@ -68,12 +68,3 @@
 
 
 
-sales_table_create = (""" create table if not exists sales (product_id int, cashier_id int, transaction_id int , total float);""")
-
-product_table_create = (""" create table if not exists product(product_id int primary key, product_name varchar, supplier_name varchar, cost_of_product float,  product_price float, expiring_date date);""")
-
-
-cashier_table_create = (""" create table if not exists cashier(cashier_id int primary key,cashier_name varchar, email varchar);""")
-
-transaction_table_create = (""" create table if not exists transaction(transaction_id int primary key, transaction_date date);""")
-
