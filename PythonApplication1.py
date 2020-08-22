@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 
 def service():
-    conn = psycopg2.connect(database="dwh", user = "dwhuser", password = "Passw0rd", host = "dwhcluster.cgfjw1ky3oot.us-west-2.redshift.amazonaws.com", port = "5439")
+    conn = psycopg2.connect(database="dwh", user = "dwhuser", password = "Passw0rd", host = "", port = "5439")
     return "Service is running!"
 
 def index():
