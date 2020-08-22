@@ -1,10 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
-<head>
-     <title>Sale Information</title>
-	 
-</head>
 
 <style>
 	  
@@ -13,7 +9,9 @@
 
 	.form-wrap{width: 420px; background:#3e3d3d; padding: 40px 20px; box-sizing: border-box; position: fixed; left: 50% top: 50%; transform; translate(-50%, -50%);}
     h1{text-align: center; color:#fff; font-weight: normal;}
-
+    h2{text-align: center;color: #fff;font-weight: normal;}
+    h3{text-align: center;color: #fff;font-weight: normal;}
+    h4{text-align: center;color: #fff;font-weight: normal;}
 	input{width: 100%; background: none; border: 1px solid #fff; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color: #fff;}
 
 	input[type="button"]{background: #bac675; border: 0; cursor: pointer; color: #3e3d3d;}
@@ -40,63 +38,48 @@
 			<input type="submit" value="Submit">
 		</form>
 
-		
 
-	</div>
+	    <form method="POST" action="/post_user">
+		  <h2>Products</h2>
+		  <label>Product ID:</label>
+		  <input type="number" name="product_id " />
+		  <label>Product_name:</label>
+		  <input type="text" name="product_name" />
+		  <label>Supplier_name:</label>
+		  <input type="text" name="supplier_name" />
+		  <label>cost of product:</label>
+		  <input type="number" name="cost_of_product" />
+		  <label>Product Price:</label>
+		  <input type="number" name="product_price" />
+		  <label>Expiring_date:</label>
+		  <input type="date" name="expiring_date" />
+		  <input type="submit" />
 
+	    </form>
 
-	
+	    <form method="POST" action="/post_user">
+		  <h3>Cashier</h3>
+		  <label>Cashier id:</label>
+		  <input type="number" name="cashier_id " />
+		  <label>cashier name:</label>
+		  <input type="text" name="cashier_name" />
+		  <label>email:</label>
+		  <input type="email" name="email" />
+		  <input type="submit" />
 
-		<form method="POST" action="/post_user">
-			<h2>Products</h2>
-			<label>Product ID:</label>
-			<input type="number" name="product_id " />
-			<label>Product_name:</label>
-			<input type="text" name="product_name" />
-			<label>Supplier_name:</label>
-			<input type="text" name="supplier_name" />
-			<label>cost of product:</label>
-			<input type="number" name="cost_of_product" />
-			<label>Product Price:</label>
-			<input type="number" name="product_price" />
-			<label>Expiring_date:</label>
-			<input type="date" name="expiring_date" />
-			<input type="submit" />
+	    </form>
 
-		</form>
-	</div>
+	</br>
 
-	
+	    <form method="post" action="/post_user">
+		  <h4>Transaction</h4>
+		  <label>transaction id:</label>
+		  <input type="number" name="transaction_id " />
+		  <label>transaction date:</label>
+		  <input type="date" name=" transaction_date" />
+		  <input type="submit" />
 
-	<form method="POST" action="/post_user">
-		<h3>Cashier</h3>
-		<label>Cashier id:</label>
-		<input type="number" name="cashier_id " />
-		<label>cashier name:</label>
-		<input type="text" name="cashier_name" />
-		<label>email:</label>
-		<input type="email" name="email" />
-		<input type="submit" />
-
-	</form>
-
-	</form>
-
-	<br />
-
-	<form method="post" action="/post_user">
-		<h4>Transaction</h4>
-		<label>transaction id:</label>
-		<input type="number" name="transaction_id " />
-		<label>transaction date:</label>
-		<input type="date" name=" transaction_date" />
-		<input type="submit" />
-
-	</form>
+	    </form>
 	</div>
 </body>
 </html>
-
-
-
-
